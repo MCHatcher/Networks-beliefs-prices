@@ -1,4 +1,4 @@
-%Simulation of baseline model: nests various cases. Last updated: Aug 22, 2023. 
+%Simulation of star network 'running example'. Last updated: Nov 2024. 
 %Written by M. Hatcher (m.c.hatcher@soton.ac.uk)
 
 clear; clc;
@@ -23,9 +23,7 @@ p = NaN(T,1); dev = p; p_crit = p; gap = p; gbar = p; cap_gain = p; check = p;
 %Initialization of network
 %----------------------------
 %A = rand(n,n)>.0.5; %Random network structure 
-
 run star, g_init = [0,0.8,1.1,2,2.8];   %%g_init = [0,1.3,1.6,1.8,2];
-%run wheel, g_init = [0,0.5125,1.025,1.5375,2.05];
 
 %----------------
 %Initial values
@@ -39,8 +37,6 @@ plag1_crit = gbar_init*(xbar/deltta)/((1+r)^2 - gbar_init);
 gap_lag1 = (plag1 - pf) - plag1_crit;
 p0_crit = sum(g0)/n*(xbar/deltta)/((1+r)^2- sum(g0)/n);
 ptild0 = p0-pf; gap0 = (p0-pf) - p0_crit;
-
-%plag2 = 5*pf;  %wheel example
 
 %----------------------------------------------
 %Computation of demands and fitness (period 0)
