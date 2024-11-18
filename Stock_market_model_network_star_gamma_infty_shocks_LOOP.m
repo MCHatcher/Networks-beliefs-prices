@@ -1,5 +1,6 @@
-%Simulation for gamma --> infty: stochastic simulations and time to convergence. 
-%Last updated: March 27, 2024. Written by M. Hatcher (m.c.hatcher@soton.ac.uk)
+%Simulation for gamma --> infty: stochastic simulations and time to consensus. 
+%Simulation of star network 'running example'. Last updated: Nov 2024.
+%Written by M. Hatcher (m.c.hatcher@soton.ac.uk)
 
 clear; clc; %close all; 
 
