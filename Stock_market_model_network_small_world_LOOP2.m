@@ -1,4 +1,4 @@
-%Simulation of baseline model: nests various cases. Last updated:hat Aug 22, 2023. 
+%Simulation of small world network: final application. Loops for consensus or rewiring prob. Last updated: Nov 2024. 
 %Written by M. Hatcher (m.c.hatcher@soton.ac.uk)
 
 clear; clc;
@@ -30,7 +30,7 @@ pd_t = truncate(pd,-dbar,dbar);
 shock0 = random(pd_t,1,1);
 shocks = random(pd_t,T,1);
 
-num_K = 17;
+num_K = 17;  %maximum mean degree
 max_var = NaN(num_K,1);
 dummy_K = zeros(num_K,1); 
 deg_K = zeros(num_K,1);
@@ -59,7 +59,7 @@ for z=1:N_rand_net
     h = WattsStrogatz(n,K,rho);
     A = adjacency(h);
     A = full(A);
-    g_init = linspace(0,1.95,n); %rng(5), g_init = 1.96*rand(1,n); 
+    g_init = linspace(0,1.95,n);  %%rng(5), g_init = 1.96*rand(1,n); 
     for i=1:n
         A(i,i)=1;
     end
