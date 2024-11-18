@@ -1,5 +1,5 @@
 %Bipartite_plotter2
-%For Example 3, left panel
+%For bipartite example, left panel
 
 set(0,'DefaultLineLineWidth',1)
 %subplot(2,3,1)
