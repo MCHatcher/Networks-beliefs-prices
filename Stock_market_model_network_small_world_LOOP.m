@@ -1,4 +1,4 @@
-%Simulation of baseline model: nests various cases. Last updated: Aug 22, 2023. 
+%Simulation of small world network: final application (loop of 4 networks). Last updated: Nov 2024. 
 %Written by M. Hatcher (m.c.hatcher@soton.ac.uk)
 
 clear; clc;
@@ -42,7 +42,7 @@ rng(z)
 h = WattsStrogatz(n,K,rho);
 A = adjacency(h);
 A = full(A);
-g_init = linspace(0,1.95,n); %rng(5), g_init = 1.96*rand(1,n); 
+g_init = linspace(0,1.95,n); 
 for i=1:n
 A(i,i)=1;
 end

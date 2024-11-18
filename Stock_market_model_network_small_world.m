@@ -38,7 +38,7 @@ rng(5)
 h = WattsStrogatz(n,K,rho);
 A = adjacency(h);
 A = full(A);
-g_init = linspace(0,2,n); %rng(5), g_init = 2.06*rand(1,n);
+g_init = linspace(0,1.95,n);  %%rng(5), g_init = 2.06*rand(1,n);
 plot(h,'NodeColor','k','EdgeAlpha',0.1);
 title('Watts-Strogatz Graph with $n = 100$ nodes, $K = 8$, and $\rho = 0.25$', ...
     'Interpreter','latex')
