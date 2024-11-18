@@ -1,4 +1,4 @@
-%Simulation of small workd network: final application. Last updated: Nov 2024. 
+%Simulation of small world network: final application. Last updated: Nov 2024. 
 %Written by M. Hatcher (m.c.hatcher@soton.ac.uk)
 
 clear; clc;
